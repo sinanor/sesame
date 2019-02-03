@@ -1,18 +1,14 @@
 System requirements: Java 8 JDK, Maven, Docker
 
-To run automated tests
-
-$mvn test
-
-To build the application go to root directory
+To build the application go to the root directory and execute commands as below, 
 
 $mvn clean install
-
-then we need to build and run the application as below
-
 $docker-compose up
 
-After above command a docker mysql and a springboot application will run and the application will be ready to accept rest call.
+The first command will build a spring boot application.
+The second command is for the create and run docker images for the application.
+
+After executing the commands above the application is ready to accept rest calls.
 
 http://localhost:8087/api/    is the root of the rest service
 
